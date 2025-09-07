@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background:#040101
+}
+
+/* Header/Navbar */
+#header {
+    background:#040101;
+    padding: 20px 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:500px
+}
+
+.logo {
+    width: 110px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f8f3f3;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background:aqua;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after
+ {
+    width: 100%;
+}
+
+/* Background image section */
+.header-image {
+    height: 70vh;
+    background: linear-gradient(to left, rgba(0,0,0,0.7), rgba(0,0,0,0.3)),
+                url(images/p1.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    margin-top: -30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 👈 centers text vertically */
+    padding-left: 50px; /* 👈 keep some left spacing */
+}
+
+
+
+.header-txt{
+    
+    margin: 0 50px;
+    font-size:30px;
+    color: #fff;
+    font-weight: bold;
+
+    
+}
+.header-txt span{
+    color: aqua;
+}
+
